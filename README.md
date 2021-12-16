@@ -2,7 +2,7 @@
 Project continued by 123Studios. Based off Batchfuscator by Batchfuscation
 
 # Features
--Base 64 Encoding
--Compile To CS File
--Compile To Exe (Beta Soon)
--Junk Variables
+<p>•Base 64 Encoding </p>
+<p>•Compile To CS File</p>
+<p>•Compile To Exe (Beta Soon) </p>
+<p>•Junk Variables </p>
