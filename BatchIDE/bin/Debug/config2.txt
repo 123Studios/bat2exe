@@ -1,0 +1,24 @@
+            
+
+	    string file = RandomString(7);
+            File.WriteAllText("C:/Users/" + Environment.UserName + "/AppData/Local/Temp/" + file + ".bat", s);
+            Process pr = new Process();
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "C:/Users/" + Environment.UserName + "/AppData/Local/Temp/" + file + ".bat";
+            //startInfo.Arguments = "";
+            //startInfo.Verb = "runas";
+            process.StartInfo = startInfo;
+            process.Start();
+
+        }
+        private static Random random = new Random();
+        public static String RandomString(int length)
+        {
+            const string chars = "abcdefghijklmnopqrstuvwxyz";
+            return new string(Enumerable.Repeat(chars, length)
+            .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+    }
+}
+//Modifying This File Can Break The Obfuscator
