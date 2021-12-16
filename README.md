@@ -1,3 +1,4 @@
+# Star the repo for development to continue.
 # Bat2Exe
 Project continued by 123Studios. Based off Batchfuscator by Batchfuscation. UI designer might broken on your end. Will fix give patience.
 
