@@ -7,4 +7,4 @@ Project continued by 123Studios. Based off Batchfuscator by Batchfuscation. UI d
 <p>•Compile To CS File ✔️</p>
 <p>•Compile To Exe ⚒️</p>
 <p>•Junk Variables ✔️</p>
-<p>•Unreadble From Notepad ❌</p>
+<p>•Unreadable From Notepad ❌</p>
