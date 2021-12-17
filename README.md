@@ -2,6 +2,8 @@
 # Bat2Exe
 Project continued by 123Studios. Based off Batchfuscator by Batchfuscation. UI designer might broken on your end. Will fix give patience.
 
+# Image
+![alt text](https://github.com/123Studios/bat2exe/blob/main/main.png?raw=true)
 # Features
 <p>•Base 64 Encoding ✔️</p>
 <p>•Compile To CS File ✔️</p>
