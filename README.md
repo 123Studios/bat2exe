@@ -4,6 +4,8 @@ Project continued by 123Studios. Based off Batchfuscator by Batchfuscation. UI d
 
 # Image
 ![alt text](https://github.com/123Studios/bat2exe/blob/main/main.png?raw=true)
+# Video
+https://www.youtube.com/watch?v=0DANy2I4aMA
 # Features
 <p>•Base 64 Encoding ✔️</p>
 <p>•Compile To CS File ✔️</p>
