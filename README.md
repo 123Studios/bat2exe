@@ -11,4 +11,4 @@ https://www.youtube.com/watch?v=0DANy2I4aMA
 <p>•Compile To CS File ✔️</p>
 <p>•Compile To Exe (Beta Soon) ✔️</p>
 <p>•Junk Variables ✔️</p>
-<p>•Unreadable From Notepad ❌</p>
+<p>•Unreadable From Notepad ⚒️</p>
