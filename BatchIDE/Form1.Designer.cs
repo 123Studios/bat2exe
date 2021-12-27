@@ -34,14 +34,16 @@ namespace BatchIDE
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.textBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCheckbox3 = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.optionCompileExe = new MaterialSkin.Controls.MaterialRadioButton();
+            this.optionCompileCS = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialSwitch1 = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.checkBox2 = new MaterialSkin.Controls.MaterialCheckbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.SuspendLayout();
@@ -136,10 +138,12 @@ namespace BatchIDE
             this.materialCard2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialCheckbox3);
+            this.materialCard2.Controls.Add(this.materialCheckbox2);
             this.materialCard2.Controls.Add(this.materialCheckbox1);
             this.materialCard2.Controls.Add(this.materialLabel1);
-            this.materialCard2.Controls.Add(this.materialRadioButton2);
-            this.materialCard2.Controls.Add(this.materialRadioButton1);
+            this.materialCard2.Controls.Add(this.optionCompileExe);
+            this.materialCard2.Controls.Add(this.optionCompileCS);
             this.materialCard2.Controls.Add(this.materialSwitch1);
             this.materialCard2.Controls.Add(this.materialLabel2);
             this.materialCard2.Controls.Add(this.checkBox2);
@@ -152,6 +156,102 @@ namespace BatchIDE
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard2.Size = new System.Drawing.Size(212, 424);
             this.materialCard2.TabIndex = 4;
+            // 
+            // materialCheckbox3
+            // 
+            this.materialCheckbox3.AutoSize = true;
+            this.materialCheckbox3.Depth = 0;
+            this.materialCheckbox3.Location = new System.Drawing.Point(14, 284);
+            this.materialCheckbox3.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckbox3.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckbox3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckbox3.Name = "materialCheckbox3";
+            this.materialCheckbox3.ReadOnly = false;
+            this.materialCheckbox3.Ripple = true;
+            this.materialCheckbox3.Size = new System.Drawing.Size(154, 37);
+            this.materialCheckbox3.TabIndex = 12;
+            this.materialCheckbox3.Text = "Create Batch File";
+            this.materialCheckbox3.UseVisualStyleBackColor = true;
+            // 
+            // materialCheckbox2
+            // 
+            this.materialCheckbox2.AutoSize = true;
+            this.materialCheckbox2.Depth = 0;
+            this.materialCheckbox2.Enabled = false;
+            this.materialCheckbox2.Location = new System.Drawing.Point(14, 124);
+            this.materialCheckbox2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckbox2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckbox2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckbox2.Name = "materialCheckbox2";
+            this.materialCheckbox2.ReadOnly = false;
+            this.materialCheckbox2.Ripple = true;
+            this.materialCheckbox2.Size = new System.Drawing.Size(177, 37);
+            this.materialCheckbox2.TabIndex = 11;
+            this.materialCheckbox2.Text = "Bad Notepad (soon)";
+            this.materialCheckbox2.UseVisualStyleBackColor = true;
+            // 
+            // materialCheckbox1
+            // 
+            this.materialCheckbox1.AutoSize = true;
+            this.materialCheckbox1.Depth = 0;
+            this.materialCheckbox1.Location = new System.Drawing.Point(14, 87);
+            this.materialCheckbox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckbox1.Name = "materialCheckbox1";
+            this.materialCheckbox1.ReadOnly = false;
+            this.materialCheckbox1.Ripple = true;
+            this.materialCheckbox1.Size = new System.Drawing.Size(158, 37);
+            this.materialCheckbox1.TabIndex = 10;
+            this.materialCheckbox1.Text = "Base64 Encoding";
+            this.materialCheckbox1.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.White;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(17, 185);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(170, 19);
+            this.materialLabel1.TabIndex = 9;
+            this.materialLabel1.Text = "Compile Output Options";
+            // 
+            // optionCompileExe
+            // 
+            this.optionCompileExe.AutoSize = true;
+            this.optionCompileExe.Depth = 0;
+            this.optionCompileExe.Location = new System.Drawing.Point(13, 248);
+            this.optionCompileExe.Margin = new System.Windows.Forms.Padding(0);
+            this.optionCompileExe.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.optionCompileExe.MouseState = MaterialSkin.MouseState.HOVER;
+            this.optionCompileExe.Name = "optionCompileExe";
+            this.optionCompileExe.Ripple = true;
+            this.optionCompileExe.Size = new System.Drawing.Size(174, 37);
+            this.optionCompileExe.TabIndex = 8;
+            this.optionCompileExe.TabStop = true;
+            this.optionCompileExe.Text = "Compile Executable";
+            this.optionCompileExe.UseVisualStyleBackColor = true;
+            // 
+            // optionCompileCS
+            // 
+            this.optionCompileCS.AutoSize = true;
+            this.optionCompileCS.Checked = true;
+            this.optionCompileCS.Depth = 0;
+            this.optionCompileCS.Location = new System.Drawing.Point(13, 214);
+            this.optionCompileCS.Margin = new System.Windows.Forms.Padding(0);
+            this.optionCompileCS.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.optionCompileCS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.optionCompileCS.Name = "optionCompileCS";
+            this.optionCompileCS.Ripple = true;
+            this.optionCompileCS.Size = new System.Drawing.Size(169, 37);
+            this.optionCompileCS.TabIndex = 7;
+            this.optionCompileCS.TabStop = true;
+            this.optionCompileCS.Text = "Compile To CS File";
+            this.optionCompileCS.UseVisualStyleBackColor = true;
+            this.optionCompileCS.CheckedChanged += new System.EventHandler(this.materialRadioButton1_CheckedChanged);
             // 
             // materialSwitch1
             // 
@@ -211,69 +311,6 @@ namespace BatchIDE
             this.label1.TabIndex = 0;
             this.label1.Text = "File Output:";
             // 
-            // materialRadioButton1
-            // 
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Checked = true;
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Location = new System.Drawing.Point(13, 160);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(169, 37);
-            this.materialRadioButton1.TabIndex = 7;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "Compile To CS File";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
-            this.materialRadioButton1.CheckedChanged += new System.EventHandler(this.materialRadioButton1_CheckedChanged);
-            // 
-            // materialRadioButton2
-            // 
-            this.materialRadioButton2.AutoSize = true;
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Location = new System.Drawing.Point(13, 194);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(174, 37);
-            this.materialRadioButton2.TabIndex = 8;
-            this.materialRadioButton2.TabStop = true;
-            this.materialRadioButton2.Text = "Compile Executable";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.BackColor = System.Drawing.Color.White;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(17, 131);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(170, 19);
-            this.materialLabel1.TabIndex = 9;
-            this.materialLabel1.Text = "Compile Output Options";
-            // 
-            // materialCheckbox1
-            // 
-            this.materialCheckbox1.AutoSize = true;
-            this.materialCheckbox1.Depth = 0;
-            this.materialCheckbox1.Location = new System.Drawing.Point(14, 87);
-            this.materialCheckbox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox1.Name = "materialCheckbox1";
-            this.materialCheckbox1.ReadOnly = false;
-            this.materialCheckbox1.Ripple = true;
-            this.materialCheckbox1.Size = new System.Drawing.Size(158, 37);
-            this.materialCheckbox1.TabIndex = 10;
-            this.materialCheckbox1.Text = "Base64 Encoding";
-            this.materialCheckbox1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,10 +347,12 @@ namespace BatchIDE
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialSwitch materialSwitch1;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
+        private MaterialSkin.Controls.MaterialRadioButton optionCompileCS;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
+        private MaterialSkin.Controls.MaterialRadioButton optionCompileExe;
         private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
+        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox2;
+        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox3;
     }
 }
 

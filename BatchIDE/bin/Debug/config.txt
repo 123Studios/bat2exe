@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 
-namespace ObfuscatedWithBatchObfuscator //Modifying This File Can Break The Obfuscator
+namespace Protected_By_Bat2Exe_By_123Studios //Modifying This File Can Break The Obfuscator
 {
     class Program
     {

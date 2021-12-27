@@ -65,6 +65,7 @@ namespace BatchIDE
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            string enc = "";
             try
             {
                 if (textBox2.Text == "")
@@ -96,16 +97,34 @@ namespace BatchIDE
                             s1 = "@echo off\nCERTUTIL -f -decode \"%~f0\" \"%Temp%/test.bat\" >nul 2>&1 \ncls\n\"%Temp%/test.bat\"\nExit\n-----BEGIN CERTIFICATE-----\n" + outy + "\n-----END CERTIFICATE-----";
                             File.WriteAllText(Environment.CurrentDirectory + "/" + textBox2.Text + ".bat", s1);
                             output = s1;
+                            enc = s1;
 
 
                         }
-                        if (materialRadioButton1.Checked == true) { CompileToCS(); MessageBox.Show("Successfully Generated C# File. Now Making Batch File.", "Success!" + MessageBoxIcon.Information);}
-                        else if (materialRadioButton2.Checked == true)
+                        if (materialCheckbox2.Checked == true)
+                        {
+                            var unicodeHeader = new byte[] { 0xFF, 0xFE, 0x0D, 0x0A }; //Code script from BatchProtector
+                            var obfuscatedCodeByteArray = new byte[] { };
+                            obfuscatedCodeByteArray = Encoding.ASCII.GetBytes("cls" + Environment.NewLine + enc);
+                            var concatenatedByteArray = new byte[unicodeHeader.Length + obfuscatedCodeByteArray.Length + 1];
+                            unicodeHeader.CopyTo(concatenatedByteArray, 0);
+                            obfuscatedCodeByteArray.CopyTo(concatenatedByteArray, unicodeHeader.Length);
+
+                            File.WriteAllBytes(Environment.CurrentDirectory + "/" + textBox2.Text + ".bat", concatenatedByteArray);
+
+                        }
+                        if (optionCompileCS.Checked == true) { CompileToCS(); MessageBox.Show("Successfully Generated C# File. Now Making Batch File.", "Success!" + MessageBoxIcon.Information);}
+                        else if (optionCompileExe.Checked == true)
                         {
                             CompileToCS();
                             MessageBox.Show("If the executable compile process not work you may not have Dotnet Developer Tools installed.", "Disclaimer!!!" + MessageBoxIcon.Information);
-
-                            Process.Start(Environment.CurrentDirectory +"/csc/csc.exe",Environment.CurrentDirectory + "/" + textBox2.Text + ".cs");
+                            ProcessStartInfo ps = new ProcessStartInfo();
+                            ps.Arguments = Environment.CurrentDirectory + "/" + textBox2.Text + ".cs";
+                            ps.FileName = Environment.CurrentDirectory + "/csc/csc.exe";
+                            ps.WindowStyle = ProcessWindowStyle.Hidden;
+                            Process.Start(ps);
+                            System.Threading.Thread.Sleep(3000);
+                            File.Delete(Environment.CurrentDirectory + $"/{textBox2.Text}.cs");
                         }
 
                     }
