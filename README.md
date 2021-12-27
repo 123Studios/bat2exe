@@ -1,6 +1,6 @@
 # Star repo to support me and more features
 # Bat2Exe
-Project continued by 123Studios. Based off Batchfuscator by Batchfuscation. UI designer might broken on your end. Will fix give patience.
+Project continued by 123Studios. Based off Batch-Obfuscator by Batchfuscation. UI designer might broken on your end. Will fix give patience.
 
 # Image
 ![alt text](https://github.com/123Studios/bat2exe/blob/main/main.png?raw=true)
