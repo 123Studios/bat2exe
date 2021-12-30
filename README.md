@@ -9,6 +9,6 @@ https://www.youtube.com/watch?v=0DANy2I4aMA
 # Features
 <p>•Base 64 Encoding ✔️</p>
 <p>•Compile To CS File ✔️</p>
-<p>•Compile To Exe (Beta Soon) ✔️</p>
+<p>•Compile To Exe (Beta) ✔️</p>
 <p>•Junk Variables ✔️</p>
 <p>•Unreadable From Notepad ⚒️</p>
